@@ -34,7 +34,7 @@ Radius_auswahl.click()
 #get the search textbox (für PLZ)
 search_field = driver.find_element_by_id("plz_ort")
 search_field.clear()
-search_field.send_keys("24625")
+search_field.send_keys("49685")
 search_field.send_keys(Keys.RETURN)                             #press "enter"
 
 
