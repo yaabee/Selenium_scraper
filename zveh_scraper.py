@@ -1,5 +1,11 @@
 from bs4 import BeautifulSoup
 from selenium import webdriver
+import request
+from urllib.request import urlretrieve
+import urllib
+from selenium.webdriver.common.action_chains import ActionChains
+import pyautogui
+import os
 
 
 def insert_new_dataset_into_mdb(mdb_uri, datenbank, collection, datensatz):
@@ -950,31 +956,50 @@ print(firma22)
 print(firma23)
 print(firma24)
 
-from pymongo import MongoClient
-client = MongoClient("192.168.100.5", 27017, maxPoolSize=50)
-db = client['yanghi']  # mz durch die entsprechende Datenbank ersetzen
-collection = db['zveh']  # db durch entsprechende DB ersetzen
-collection.insert_one(firma)
-collection.insert_one(firma2)
-collection.insert_one(firma3)
-collection.insert_one(firma4)
-collection.insert_one(firma5)
-collection.insert_one(firma6)
-collection.insert_one(firma7)
-collection.insert_one(firma8)
-collection.insert_one(firma9)
-collection.insert_one(firma10)
-collection.insert_one(firma11)
-collection.insert_one(firma12)
-collection.insert_one(firma13)
-collection.insert_one(firma14)
-collection.insert_one(firma15)
-collection.insert_one(firma16)
-collection.insert_one(firma17)
-collection.insert_one(firma18)
-collection.insert_one(firma19)
-collection.insert_one(firma20)
-collection.insert_one(firma21)
-collection.insert_one(firma22)
-collection.insert_one(firma23)
-collection.insert_one(firma24)
+
+# images = driver.find_elements_by_tag_name('img')
+#
+# for image in images:
+#     print(image.get_attribute('src'))
+
+
+# driver.find_element_by_xpath('//*[@id="c68651"]/div[3]/div[9]/div/div[3]/a/img').click()
+os.chdir()
+
+button = pyautogui.locateOnScreen('arrow_black_right.png')
+buttonx, buttony = pyautogui.center(button)
+pyautogui.click(buttonx, buttony)
+
+
+# pyautogui.moveTo(897, 880, 2, pyautogui.easeInQuad)
+# pyautogui.click(x=897, y=880)
+
+
+# from pymongo import MongoClient
+# client = MongoClient("192.168.100.5", 27017, maxPoolSize=50)
+# db = client['yanghi']  # mz durch die entsprechende Datenbank ersetzen
+# collection = db['zveh']  # db durch entsprechende DB ersetzen
+# collection.insert_one(firma)
+# collection.insert_one(firma2)
+# collection.insert_one(firma3)
+# collection.insert_one(firma4)
+# collection.insert_one(firma5)
+# collection.insert_one(firma6)
+# collection.insert_one(firma7)
+# collection.insert_one(firma8)
+# collection.insert_one(firma9)
+# collection.insert_one(firma10)
+# collection.insert_one(firma11)
+# collection.insert_one(firma12)
+# collection.insert_one(firma13)
+# collection.insert_one(firma14)
+# collection.insert_one(firma15)
+# collection.insert_one(firma16)
+# collection.insert_one(firma17)
+# collection.insert_one(firma18)
+# collection.insert_one(firma19)
+# collection.insert_one(firma20)
+# collection.insert_one(firma21)
+# collection.insert_one(firma22)
+# collection.insert_one(firma23)
+# collection.insert_one(firma24)
