@@ -53,6 +53,7 @@ while y < maxSeiten:
 
             for meta in soup2.findAll('section', {'id': 'section-1'}):
                 block = []
+                print(meta)
                 for x in meta.findAll('p', {'class': 'm-n p-n'}):
                     block.append(x.text)
 
@@ -130,14 +131,14 @@ while y < maxSeiten:
                     "firma_branche": branche
                 }
 
-                print(datensatz)
-
-                print(block)
-                # print(len(block))
-                print('##################################')
-                insert_new_dataset_into_mdb(mdb_uri="192.168.100.5", datenbank='yanghi',
-                                            collection='hwk_ulm',
-                                            datensatz=datensatz)
+                # print(datensatz)
+                #
+                # print(block)
+                # # print(len(block))
+                # print('##################################')
+                # insert_new_dataset_into_mdb(mdb_uri="192.168.100.5", datenbank='yanghi',
+                #                             collection='hwk_ulm',
+                #                             datensatz=datensatz)
     y += 1
     print('neueSeiteeeeeee', y)
     button = driver.find_element_by_class_name('next')
