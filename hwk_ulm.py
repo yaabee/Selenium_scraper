@@ -67,6 +67,7 @@ while y < maxSeiten:
                 homepage = 'K/A'
                 branche = 'K/A'
 
+                # hier sind die werte in paaren => immer ein index weiter ist gesuchter wert
                 for index, i in enumerate(block):
                     if 'Name:' in block[index]:
                         name = block[index + 1].strip()
