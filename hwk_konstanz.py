@@ -14,8 +14,8 @@ def insert_new_dataset_into_mdb(mdb_uri, datenbank, collection, datensatz):
 
 
 
-z = 1420
-y = 142
+z = 1
+y = 1
 maxSeiten = 4000
 while y < maxSeiten:
 
@@ -39,6 +39,8 @@ while y < maxSeiten:
         # print('################################################################')
         soup2 = BeautifulSoup(single_page_text, 'html.parser')
 
+
+
         for firma in soup2('h1'):
             name = 'K/A'
 
@@ -46,10 +48,10 @@ while y < maxSeiten:
             # name = name.replace('\n', '')
             # name = name.replace('\t', '')
             name = name.strip()
-            # print(name)
+            print(name)
 
         for section in soup2('section', limit=1):
-
+            name = 'K/A'
             strasse = 'K/A'
             plz = 'K/A'
             ort = 'K/A'
@@ -67,19 +69,19 @@ while y < maxSeiten:
                 # token ist ganzer addressen string
                 string_strasse = section.split('D-')
                 strasse = string_strasse[0]
-                # print(strasse)
+                print(strasse)
 
                 string_plz = string_strasse[1]
                 plz_token = string_plz.split(' ')
                 plz = plz_token[0]
-                # print(plz)
+                print(plz)
 
                 ort_array = plz_token[1:]
                 ort_string = ' '.join(ort_array)
                 if 'Landkreis' in ort_string:
                     ort_token = ort_string.split('Landkreis')
                     ort = ort_token[0]
-                    # print(ort)
+                    print(ort)
 
                     tele_string = ort_token[1].split(' ')
                     tele_string = ''.join(tele_string)
@@ -96,7 +98,7 @@ while y < maxSeiten:
                             else:
                                 break
                         tele = ''.join(Tele)
-                        # print(tele)
+                        print(tele)
 
                     Handy = []
                     if 'Handy' in tele_string:
@@ -108,7 +110,7 @@ while y < maxSeiten:
                             else:
                                 break
                         handy = ''.join(Handy)
-                        # print(handy)
+                        print(handy)
 
                     Fax = []
                     if 'Fax' in tele_string:
@@ -120,7 +122,7 @@ while y < maxSeiten:
                             else:
                                 break
                         fax = ''.join(Fax)
-                        # print(fax)
+                        print(fax)
 
 
         for section in soup2.find_all('section'):
@@ -130,12 +132,12 @@ while y < maxSeiten:
                 # print(section.text)
                 if 'www.' in a.text:
                     homepage = a.text
-                    # print(homepage, 'homepage')
+                    print(homepage, 'homepage')
                 if '--at--' in a.text:
                     mail = a.text
                     mail = mail.replace('--at--', '@')
-                    # print(mail, 'mail')
-
+                    print(mail, 'mail')
+            # datensatz = {'kam nichts'}
             datensatz = {
                 'firma_name': name,
                 'firma_strasse': strasse,
@@ -147,10 +149,10 @@ while y < maxSeiten:
                 "firma_mail": mail,
                 "firma_homepage": homepage,
             }
-        print(datensatz)
+            print(datensatz)
         print('neuerDatensatz++++++++++++++++++++++++++++++++++++++++++++++++++++++++++', y)
-        insert_new_dataset_into_mdb(mdb_uri="192.168.100.5", datenbank='yanghi', collection='hwk_konstanz',
-                                    datensatz=datensatz)
+        # insert_new_dataset_into_mdb(mdb_uri="192.168.100.5", datenbank='yanghi', collection='hwk_konstanz',
+        #                             datensatz=datensatz)
     z = z + 10
     print(z)
     y += 1
