@@ -9,7 +9,6 @@ def insert_new_dataset_into_mdb(mdb_uri, datenbank, collection, datensatz):
     collection.insert_one(datensatz)
 
 
-
 url = 'https://www.hwk-konstanz.de/betriebe/suche-64,0,bdbsearch.html?search-searchterm=&search-filter-zipcode=*&search-filter-radius=250&search-filter-jobnr=&search-job=&search-filter-experience='
 page = requests.get(url)
 clean_text = page.text
@@ -28,7 +27,7 @@ for link in soup.select('a[href^=/betriebe/]')[:10]:
     from bs4 import BeautifulSoup
 
     # in 10er schritten pro seite
-    z = 0
+    z = 2410
     while z < 2460:
 
         url = 'https://www.hwk-konstanz.de/betriebe/suche-64,0,bdbsearch.html?limit=10&search-searchterm=&search-job=&search-filter-experience=&search-filter-radius=250&search-filter-jobnr=&search-filter-zipcode=*&offset=' + str(
@@ -45,7 +44,7 @@ for link in soup.select('a[href^=/betriebe/]')[:10]:
             name_branche = []
             for l, n_b in enumerate(soup_single_page.find_all("div", class_="col-md-12", limit=2)):
                 name_branche.append((n_b.p, l))
-            print(name_branche)
+            # print(name_branche)
 
             branche = "K/A"
             try:
@@ -65,15 +64,21 @@ for link in soup.select('a[href^=/betriebe/]')[:10]:
             name = x[0].replace("<p>", "")
             strasse = x[1]
 
+            landkreis = "K/A"
+
             # x0 immer name, x1 immer str, x2 evtl landkreis drin oder durch <br> nur plz und ort
-            if "Landkreis" in x[2]:
-                plz_ort_landkreis = x[2].split("Landkreis")
-                landkreis = plz_ort_landkreis[1].strip()
-                plz = plz_ort_landkreis[0][2:8].strip()
-                ort = plz_ort_landkreis[0][8:].strip()
-            else:
-                plz = x[2][2:8].strip()
-                ort = x[2][8:].strip()
+            try:
+                if "Landkreis" in x[2]:
+                    plz_ort_landkreis = x[2].split("Landkreis")
+                    landkreis = plz_ort_landkreis[1].strip()
+                    plz = plz_ort_landkreis[0][2:8].strip()
+                    ort = plz_ort_landkreis[0][8:].strip()
+                else:
+                    plz = x[2][2:8].strip()
+                    ort = x[2][8:].strip()
+            except:
+                pass
+
 
             # y0 tele, y1 branche
             email = "K/A"
@@ -135,10 +140,3 @@ for link in soup.select('a[href^=/betriebe/]')[:10]:
 
         z += 10
         print('#####################################################################', z)
-
-
-
-
-
-
-

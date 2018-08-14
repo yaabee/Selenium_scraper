@@ -1,9 +1,5 @@
 from bs4 import BeautifulSoup
 import requests
-# from selenium import webdiver
-
-# driver = driver.Chrome('chromedriver.exe')
-# driver.get('')
 
 def insert_new_dataset_into_mdb(mdb_uri, datenbank, collection, datensatz):
     from pymongo import MongoClient
@@ -11,8 +7,6 @@ def insert_new_dataset_into_mdb(mdb_uri, datenbank, collection, datensatz):
     db = client[datenbank]
     collection = db[collection]
     collection.insert_one(datensatz)
-
-
 
 z = 1
 y = 1
@@ -38,7 +32,6 @@ while y < maxSeiten:
         # print(single_page_text)
         # print('################################################################')
         soup2 = BeautifulSoup(single_page_text, 'html.parser')
-
 
 
         for firma in soup2('h1'):
@@ -157,11 +150,3 @@ while y < maxSeiten:
     print(z)
     y += 1
     print('neueSeite##############################################################################################')
-
-
-
-
-
-
-
-

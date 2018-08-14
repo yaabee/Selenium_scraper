@@ -4,14 +4,11 @@
     <bookmark url="file://$PROJECT_DIR$/domotex_scraper.py" line="24" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ce04603-5972-4349-a22b-20756cc421f3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hwk_konstanz_.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/metallhandwerk_neu.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fitness_scraper.py" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/FitnessDüsseldorf.py" afterPath="$PROJECT_DIR$/GelbeSeiten.py" />
+    <list default="true" id="4ce04603-5972-4349-a22b-20756cc421f3" name="Default" comment="&quot;hwk_konstanz_neu mit branche&quot;">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/akg_architekten.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hwk_heilbronn.py" afterPath="$PROJECT_DIR$/hwk_heilbronn.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hwk_konstanz.py" afterPath="$PROJECT_DIR$/hwk_konstanz.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hwk_konstanz_.py" afterPath="$PROJECT_DIR$/hwk_konstanz_.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -37,8 +34,8 @@
       <file leaf-file-name="hwk_konstanz.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hwk_konstanz.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-368">
-              <caret line="31" column="21" lean-forward="false" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
+            <state relative-caret-position="26">
+              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="8" selection-end-column="36" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
               </folding>
@@ -46,13 +43,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hwk_konstanz_.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="hwk_konstanz_.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hwk_konstanz_.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="30" column="9" lean-forward="true" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
+            <state relative-caret-position="712">
+              <caret line="137" column="0" lean-forward="false" selection-start-line="137" selection-start-column="0" selection-end-line="138" selection-end-column="60" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="akg_architekten.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/akg_architekten.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1208">
+              <caret line="88" column="0" lean-forward="false" selection-start-line="88" selection-start-column="0" selection-end-line="89" selection-end-column="52" />
+              <folding>
+                <element signature="e#0#29#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -61,7 +70,7 @@
       <file leaf-file-name="hwk_heilbronn.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hwk_heilbronn.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="856">
+            <state relative-caret-position="1200">
               <caret line="83" column="0" lean-forward="true" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
               <folding />
             </state>
@@ -81,7 +90,7 @@
       <file leaf-file-name="hwk_stuttgart.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hwk_stuttgart.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
+            <state relative-caret-position="3040">
               <caret line="192" column="133" lean-forward="false" selection-start-line="190" selection-start-column="12" selection-end-line="192" selection-end-column="133" />
               <folding />
             </state>
@@ -91,7 +100,7 @@
       <file leaf-file-name="GelbeSeiten.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/GelbeSeiten.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="623">
+            <state relative-caret-position="944">
               <caret line="64" column="25" lean-forward="false" selection-start-line="64" selection-start-column="25" selection-end-line="67" selection-end-column="23" />
               <folding />
             </state>
@@ -109,7 +118,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>altair</find>
       <find>col col-xs-12 col-sm-12 col-md-12 list-group</find>
       <find>betriebe</find>
       <find>robot</find>
@@ -139,6 +147,7 @@
       <find>div</find>
       <find>container</find>
       <find>&lt;p&gt;</find>
+      <find>3</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -175,6 +184,7 @@
         <option value="$PROJECT_DIR$/metallhandwerk_neu.py" />
         <option value="$PROJECT_DIR$/hwk_konstanz.py" />
         <option value="$PROJECT_DIR$/hwk_konstanz_.py" />
+        <option value="$PROJECT_DIR$/akg_architekten.py" />
       </list>
     </option>
   </component>
@@ -200,6 +210,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -215,8 +227,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -235,8 +245,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.hwk_konstanz_">
-    <configuration name="GelbeSeiten" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.akg_architekten">
+    <configuration name="akg_architekten" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -248,7 +258,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="e-masters_scraper" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GelbeSeiten.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/akg_architekten.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -324,17 +334,17 @@
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.hwk_heilbronn" />
       <item index="1" class="java.lang.String" itemvalue="Python.hwk_konstanz" />
-      <item index="2" class="java.lang.String" itemvalue="Python.GelbeSeiten" />
-      <item index="3" class="java.lang.String" itemvalue="Python.metallhandwerk_neu" />
-      <item index="4" class="java.lang.String" itemvalue="Python.hwk_konstanz_" />
+      <item index="2" class="java.lang.String" itemvalue="Python.metallhandwerk_neu" />
+      <item index="3" class="java.lang.String" itemvalue="Python.hwk_konstanz_" />
+      <item index="4" class="java.lang.String" itemvalue="Python.akg_architekten" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.hwk_konstanz_" />
-        <item index="1" class="java.lang.String" itemvalue="Python.hwk_konstanz" />
-        <item index="2" class="java.lang.String" itemvalue="Python.metallhandwerk_neu" />
-        <item index="3" class="java.lang.String" itemvalue="Python.hwk_heilbronn" />
-        <item index="4" class="java.lang.String" itemvalue="Python.GelbeSeiten" />
+        <item index="0" class="java.lang.String" itemvalue="Python.akg_architekten" />
+        <item index="1" class="java.lang.String" itemvalue="Python.hwk_konstanz_" />
+        <item index="2" class="java.lang.String" itemvalue="Python.hwk_konstanz" />
+        <item index="3" class="java.lang.String" itemvalue="Python.metallhandwerk_neu" />
+        <item index="4" class="java.lang.String" itemvalue="Python.hwk_heilbronn" />
       </list>
     </recent_temporary>
   </component>
@@ -352,6 +362,14 @@
       <option name="presentableId" value="Default" />
       <updated>1512371519653</updated>
     </task>
+    <task id="LOCAL-00001" summary="&quot;hwk_konstanz_neu mit branche&quot;">
+      <created>1533023867137</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1533023867137</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TodoView">
@@ -365,14 +383,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11940298" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12153518" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32131496" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30752915" sideWeight="0.5083333" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32131496" sideWeight="0.50208336" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" show_stripe_button="true" weight="0.3652174" sideWeight="0.5010661" order="2" side_tool="false" content_ui="tabs" x="1920" y="0" width="1080" height="1880" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" show_stripe_button="true" weight="0.3652174" sideWeight="0.5010661" order="2" side_tool="false" content_ui="tabs" x="1920" y="0" width="1080" height="1882" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33586955" sideWeight="0.4989339" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -410,6 +427,10 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="&quot;hwk_konstanz_neu mit branche&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;hwk_konstanz_neu mit branche&quot;" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints-dialog>
@@ -420,13 +441,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../eurobaustoff_s/eurobaustoff_scraper.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="3" column="29" lean-forward="false" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/emasterScraper.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1344">
@@ -709,19 +723,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hwk_konstanz.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-368">
-          <caret line="31" column="21" lean-forward="false" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/hwk_stuttgart.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
+        <state relative-caret-position="3040">
           <caret line="192" column="133" lean-forward="false" selection-start-line="190" selection-start-column="12" selection-end-line="192" selection-end-column="133" />
           <folding />
         </state>
@@ -729,7 +733,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/GelbeSeiten.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="623">
+        <state relative-caret-position="944">
           <caret line="64" column="25" lean-forward="false" selection-start-line="64" selection-start-column="25" selection-end-line="67" selection-end-column="23" />
           <folding />
         </state>
@@ -745,18 +749,38 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/hwk_heilbronn.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="856">
+        <state relative-caret-position="1200">
           <caret line="83" column="0" lean-forward="true" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/hwk_konstanz.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="8" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/hwk_konstanz_.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="30" column="9" lean-forward="true" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
+        <state relative-caret-position="712">
+          <caret line="137" column="0" lean-forward="false" selection-start-line="137" selection-start-column="0" selection-end-line="138" selection-end-column="60" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/akg_architekten.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1208">
+          <caret line="88" column="0" lean-forward="false" selection-start-line="88" selection-start-column="0" selection-end-line="89" selection-end-column="52" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
           </folding>
         </state>
       </provider>
